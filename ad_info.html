@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Dosis:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1f21cc4a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logo-img" alt="logo" src="pictures/logo.webp">
+        </div>
+        <div id="nav">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a id="link-profile">Profil</i></a>
+            </div>
+            <div class="nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a>Contact</a>
+            </div>
+            <div id="search">
+                <input type="text" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+        <div id="nav-block">
+            <button id="btn-bars" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="link-slide" class="dropdown-content">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="index.html#footer">Contact</a></div>
+        </div>
+    </header>
+    <main id="main-ad-info">
+        <h2 id="name-info"></h2>
+        <div id="img-div">
+            <img id="img-ad">
+        </div>
+        <div id="ad-info-div">
+            <div id="div-rating">
+                <div id="likes-info">
+                    <button id="likesBtn"><i class="fa-regular fa-heart"></i></button><span id="numberLikes"></span>
+                </div>
+                <p id="reviews-info"></p>
+                <p id="rating-info"></p>
+            </div>
+            <p id="description-info"></p>
+            <p id="price-info"></p>
+            <div id="div-rating-select">
+                <label>Rate the Ad:</label>
+                <select id="select-rating">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="btnRate">Rate</button> 
+            </div>
+        </div>
+     
+        <div id="slider">
+            <div id="gallery"></div>
+            <button id="prevBtnInfo"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="nextBtnInfo"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div id="divComment">
+            <h4>Comments:</h4>
+            <div id="comment"></div>
+        <div>
+            <input id="input-comment" type="text" placeholder="Enter comment...">
+        </div>
+        <button id="btn-comment">Publish</button>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="div-footer">
+            <div id="link-footer">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </div>
+            <div id="footer-logo">
+                <img src="pictures/logo.webp">
+            </div>
+            
+        </div>
+        <div id="copyright">Copyright @ 2024</div>
+    </footer>
+    <script src="ad_info.js"></script>
+</body>
+</html>

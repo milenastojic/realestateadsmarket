@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All ads</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Dosis:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1f21cc4a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logo-img" alt="logo" src="pictures/logo.webp">
+        </div>
+        <div id="nav">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a id="link-profile">Profil</i></a>
+            </div>
+            <div class="nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a>Contact</a>
+            </div>
+            <div id="search">
+                <input type="text" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+        <div id="nav-block">
+            <button id="btn-bars" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="link-slide" class="dropdown-content">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="#footer">Contact</a></div>
+        </div>
+    </header>
+    <main id="main-admin">
+        <section id="admin-page-all">
+            <h2 id="allAdsTitle"></h2>
+            <div id="select-div-ads">
+                <div>
+                    <select id="select-ads">
+                        <option value="all">All categories</option>
+                    </select>
+                </div>
+                <div id="input-price-div">
+                    <input id="priceMin" placeholder="Price from...">
+                    <input id="priceMax" placeholder="Price up to...">
+                </div>
+            </div>
+            <div id="sort-div">
+                <div class="sort">
+                    <label>Sort By:</label>
+                    <select id="select-attribute">
+                        <option>...</option>
+                        <option value="price">Price</option>
+                        <option value="likes">Likes</option>
+                        <option value="reviews">Reviews</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+                <div class="sort">
+                    <label>Sort By:</label>
+                    <select id="select-sort">
+                        <option>...</option>
+                        <option value="asc">Sort Ascending</option>
+                        <option value="desc">Sort Descending</option>
+                    </select>
+                </div>
+                <button id="btnAdsSelect">Filter</button>
+            </div>
+            
+            <div id="categories-admin">
+                <div class="divCategory">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="div-footer">
+            <div id="link-footer">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </div>
+            <div id="footer-logo">
+                <img src="pictures/logo.webp">
+            </div>
+            
+        </div>
+        <div id="copyright">Copyright @ 2024</div>
+    </footer>
+    <script src="ads-viewer.js"></script>
+</body>
+</html>

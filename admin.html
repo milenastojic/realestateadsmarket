@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Dosis:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1f21cc4a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logo-img" alt="logo" src="pictures/logo.webp">
+        </div>
+        <div id="nav">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a id="link-profile-nav">Profil</a>
+            </div>
+            <div class="nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a>Contact</a>
+            </div>
+            <div id="search">
+                <input type="text" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+        <div id="nav-block">
+            <button id="btn-bars" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="link-slide" class="dropdown-content">
+            <div><a href="index.html">Home</a></div>
+            <div><a id="link-profile-dropdown">Profil</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="#footer">Contact</a></div>
+        </div>
+    </header>
+    <main id="main-admin">
+        <section id="post-header">
+            <div id="name-lastname-div">
+                <h2 id="name-lastname"></h2>
+            </div>
+            <div id="edit-admin">
+                <div>
+                    <a id="add-category">ADD CATEGORY</a>
+                </div>
+                <div id="edit-admin">
+                    <div>
+                        <a id="all-ads">All Ads</a>
+                    </div>
+                </div>
+                <div>
+                    <input id="search-admin-category" placeholder="Search category...">
+                </div>
+            </div>
+        </section>
+        <section id="admin-page">
+            <div id="admin-info">
+                <div class="info-admin">
+                    <span>Username:</span>
+                    <p id="username-admin"></p>
+                </div>
+                <div class="info-admin">
+                    <span>Address:</span>
+                    <p id="address-admin"></p>
+                </div>
+                <div class="info-admin">
+                    <span>Phone number:</span>
+                    <p id="phone-admin"></p>
+                </div>
+                <div class="info-admin">
+                    <span>Gender:</span>
+                    <p id="gender-admin"></p>
+                </div>
+            </div>
+            <div id="categories-admin">
+                <div class="divCategory">
+                    
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="div-footer">
+            <div id="link-footer">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </div>
+            <div id="footer-logo">
+                <img src="pictures/logo.webp">
+            </div>
+            
+        </div>
+        <div id="copyright">Copyright @ 2024</div>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Dosis:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1f21cc4a6.js" crossorigin="anonymous"></script>
+</head>
+<body id="registerBody">
+    <header>
+        <div id="logo">
+            <img id="logo-img" alt="logo" src="pictures/logo.webp">
+        </div>
+        <div id="nav">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a>Contact</a>
+            </div>
+            <div id="search">
+                <input type="text" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+        <div id="nav-block">
+            <button id="btn-bars" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="link-slide" class="dropdown-content">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="index.html#footer">Contact</a></div>
+        </div>
+    </header>
+    <main id="mainRegister">
+        <section id="register-div">
+            <h2 id="h2-register">Create an account</h2>
+            <h5 id="h5-register">Enter your personal data</h5>
+            <div class="input-div">
+                <input id="input-name" class="input-register" name="name" placeholder="Enter first name...">
+                <span id="span-register-name" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <input id="input-lastname" class="input-register" name="lastName" placeholder="Enter last name...">
+                <span id="span-register-lastname" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <input type="text" id="input-address" class="input-register" name="address" placeholder="Enter address...">
+                <span id="span-register-address" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <input type="number" id="input-phone" class="input-register" name="phone" placeholder="Enter phone number...">
+                <span id="span-register-phone" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <input type="text" id="username-register" class="input-register" name="username" placeholder="Enter username...">
+                <span id="span-register-username" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <input type="password" id="password-register" class="input-register" name="password" placeholder="Enter password...">
+                <span id="span-register-password" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <input type="password" id="password-check" class="input-register" name="confirm-password" placeholder="Confirm password...">
+                <span id="span-register-passConfirm" style="display: none;"></span>
+            </div>
+            <div class="input-div">
+                <div id="genderDiv">
+                    <label>Male</label>
+                    <input name="gender" type="radio" checked id="radioGender">
+                    <label>Female</label>
+                    <input name="gender" type="radio">
+                </div>
+            </div>
+            <div class="input-div">
+                <label>Admin</label>
+                <input type="checkbox" id="input-checkbox">
+            </div>
+            <button id="registerBtn">Register</button>
+        </section>
+    </main>
+   
+    <script src="register.js"></script>
+</body>
+</html>

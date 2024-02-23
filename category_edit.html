@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category edit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Dosis:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1f21cc4a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logo-img" alt="logo" src="pictures/logo.webp">
+        </div>
+        <div id="nav">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a id="link-profile">Profil</i></a>
+            </div>
+            <div class="nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a>Contact</a>
+            </div>
+            <div id="search">
+                <input type="text" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+        <div id="nav-block">
+            <button id="btn-bars" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="link-slide" class="dropdown-content">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="index.html#footer">Contact</a></div>
+        </div>
+    </header>
+    <main id="categoryAddMain">
+        <section id="sectionCategoryAdd">
+            <h1>EDIT CATEGORY</h1>
+            <div id="category_add_inputs">
+                <div id="add_inputs">
+                    <h2 id="h2_add" >EDIT CATEGORY</h2>
+                    <div>
+                        <label>Category Name:</label>
+                        <input id="input-category_edit_name">
+                    </div>
+                    <div>
+                        <label>Category Image:</label>
+                        <input id="input-category_edit_image">
+                    </div>
+                    <button onclick="editCategory()">Edit</button>
+                </div>
+            </div>
+            <div id="categoryAddImageDiv">
+                <img src="pictures/category.jpg">
+            </div>
+        </section>
+    </main>
+    
+    <script src="category_edit.js"></script>
+</body>
+</html>

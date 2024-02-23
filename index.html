@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Dosis:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1f21cc4a6.js" crossorigin="anonymous"></script>
+</head>
+<body id="indexBody">
+   
+    <header>
+        <div id="logo">
+            <img id="logo-img" alt="logo" src="pictures/logo.webp">
+        </div>
+        <div id="nav">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a>Contact</a>
+            </div>
+            <div id="search">
+                <input type="text" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+        <div id="nav-block">
+            <button id="btn-bars" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="link-slide">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="ads-viewer.html">All ads</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="#footer">Contact</a></div>
+        </div>
+    </header>
+    <main>
+        <section id="index-main">
+            <div id="sectionSliderAndLogin">
+                <div id="loginDiv">
+                    <h1 id="h1">Log in to post your ad or register to become a new user</h1>
+                    <div id="username">
+                        <label>Username:</label>
+                        <input id="input-username">
+                        <span id="span-login-user" style="display: none;"></span>
+                    </div>
+                    <div id="password">
+                        <label>Password:</label>
+                        <input id="input-password" type="password">
+                        <span id="span-login-pass"></span>
+                    </div>
+                    <button id="btn-login">Log In</button>
+                    <div id="loginOrRegister">
+                        <span>Don’t have an account?</span>
+                        <a id="orRegister" href="register.html">Register</a>
+                    </div>
+                    
+                </div>
+                <div id="slider-container">
+                    <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="sliderDiv">
+                        <h2 id="h2"></h2>
+                        <img id="img">
+                    </div>
+                    <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+               
+            </div>
+        </section>
+        
+        <section id="index-all-ads">
+            <h2 id="h2-index-ads">Discover Your New Home</h2>
+            <h4 id="h4">
+                See all our client's apartment ads and discover incredible opportunities! By clicking on the info button at the bottom of each ad, you can see all the details about the unit for sale.</h4>
+                <section id="admin-page-all">
+                    <div id="select-div-ads">
+                        <div>
+                            <select id="select-ads">
+                                <option value="all">All categories</option>
+                            </select>
+                        </div>
+                        <div id="input-price-div">
+                            <input id="priceMin" placeholder="Price from...">
+                            <input id="priceMax" placeholder="Price up to...">
+                        </div>
+                    </div>
+                    <div id="sort-div">
+                        <div class="sort">
+                            <label>Sort By:</label>
+                            <select id="select-attribute">
+                                <option>...</option>
+                                <option value="price">Price</option>
+                                <option value="likes">Likes</option>
+                                <option value="reviews">Reviews</option>
+                                <option value="rating">Rating</option>
+                            </select>
+                        </div>
+                        <div class="sort">
+                            <label>Sort By:</label>
+                            <select id="select-sort">
+                                <option>...</option>
+                                <option value="asc">Sort Ascending</option>
+                                <option value="desc">Sort Descending</option>
+                            </select>
+                        </div>
+                        <button id="btnAdsSelect">Filter</button>
+                    </div>
+                    
+                </section>
+            <div id="categories-admin">
+                <div class="divCategory">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="div-footer">
+            <div id="link-footer">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </div>
+            <div id="footer-logo">
+                <img src="pictures/logo.webp">
+            </div>
+            
+        </div>
+        <div id="copyright">Copyright @ 2024</div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
